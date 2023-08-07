@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="deneme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="aykkabı1yardumcı.css">
+    
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+
+<script src="jquery.bxslider.js"></script>
+
+<link href="jquery.bxslider.css" rel="stylesheet" />	
+    </script> 
+    <script>
+       
+
+$(function(){
+  $('.bxslider').bxSlider({
+  auto: true,
+  autoControls: true,
+  stopAutoOnClick: true,
+  pager: true,
+  slideWidth: 600
+  });
+});
+        </script>	
+        <style>
+            * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+:root {
+    --main-color: #e84242;
+    --black-color: #0e0e0e;
+
+}
+
+html {
+    font-size: 10px;
+    
+    scroll-padding-top: 10rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: gray;
+}
+
+section {
+    padding: 3.5rem 4%;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    background-color: gray;
+    font-size: 1.7rem;
+    color: rgb(13, 11, 11);
+    background-color: rgb(0, 0, 0);
+    color:white;
+    cursor: pointer;
+}
+.header .logo img {
+    height: 10rem;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 9%;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    border-radius: 70rem;
+    box-shadow: gray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    color: var(--black-color);
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    border-bottom: 0.1rem solid var(--black-color);
+}
+
+.header .navbar a:hover {
+    border-color: var(--black-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+
+}
+
+/*! home start */
+
+
+.home {
+    min-height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.home .content {
+    max-width: 60rem;
+    color: rgb(0, 0, 0);
+}
+
+.home .content h3 {
+    font-size: 60px;
+    color: rgb(3, 3, 3);
+
+
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+    color: #ceb6b6;
+}
+
+/*! home end */
+/*! menu start */
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3.rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.menu .box-container .box img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu .box-container .box .menu-category {
+    font-size: 1.2rem;
+
+}
+.menu .box-container .box h3 {
+    font-size: 3rem;
+    padding: 1rem;
+    
+}
+/*! menu end */
+.yazi {
+    animation: blinker 0.9s linear infinite; //efekti veren kod
+    color: #1c87c9; //yazı rengi
+    font-size: 30px; // yazı boyutu
+    font-weight: bold; // yazı kalınlığı
+    font-family: sans-serif; // yazı fontu
+    }
+    @keyframes blinker {  
+    50% { opacity: 0; }
+    }
+    .bxslider{
+        text-align: center;
+        width: 700px;
+        margin: 0 auto;
+    }
+        </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="site.html" class="logo">
+            <img src="images/logo.jpeg" alt="">
+        </a>
+        <nav class="navbar">
+            <a href="#" class="active">HOME</a>
+            <a href="#">MAN</a>
+            <a href="#">WOMAN</a>
+            <a href="#">KIDS</a>
+        </nav>
+        <div class="buttons">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+
+    <section class="menu">
+
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="images/ayakkabı1.jpeg" alt="menu">
+                    <span class="menu-category">SHOE</span>
+                    <h3>BALENCIAGA</h3>
+                    <div class="price">
+                        <p class="yazi" style="font-size: 25px;"> $920</p> <span
+                            style="font-size: 15px; text-decoration: line-through; color:rgb(255, 0, 0)">$1367</span>
+                    </div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">BUY</a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+   
+      
+    </div>
+     <script>
+    $(function(){
+        $('.bxslider').bxSlider({
+        auto: true,
+        autoControls: true,
+        stopAutoOnClick: true,
+        pager: true,
+        slideWidth: 600
+        });
+      });
+    </script>
+
+<div id="slider-wrapper">
+    <div class="slider">
+        <a class="img-bir">
+            <img src="images/ayakkabı1.jpeg">
+           
+         </a>
+        <a class="img-iki">
+                <img src="images/ayakbı--2.jpeg">
+            
+        </a>
+        
+      
+     </div>
+</div>
+</body>
+
+</html>

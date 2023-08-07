@@ -1,0 +1,506 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+
+:root {
+    --main-color: #e84242;
+    --black-color: #0e0e0e;
+    --border: 0.1rem solid rgba(255, 255, 255, 0.4)
+}
+
+/*! base html code */
+! html {
+    font-size: 10px;
+
+    scroll-padding-top: 10rem;
+    scroll-behavior: smooth;
+}
+
+
+
+body {
+    background-color: gray;
+}
+
+section {
+    padding: 3.5rem 4%;
+
+}
+
+.buttons i {
+    font-size: 20px;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 2rem;
+    border-radius: 30rem;
+    background-color: gray;
+    font-size: 1rem;
+    color: rgb(13, 11, 11);
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ceb6b6;
+    opacity: 0.4;
+}
+
+.heading {
+    color: white;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.heading span {
+    text-transform: uppercase;
+}
+
+.search-input {
+    font-size: 1.6rem;
+    color: var(--black-color);
+    padding: 1rem;
+    text-transform: none;
+    border-radius: 3rem;
+}
+
+/*!header start*/
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background-color: white;
+    width: 32rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 25px 2px rgb(0, 0, 0 / 75%);
+    transform: scaleY(0);
+}
+
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
+
+
+
+
+.header .search-form i {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black-color);
+}
+
+.header .search-form input {
+    width: 100%;
+}
+
+
+
+
+.header .logo img {
+    height: 5rem;
+    transition: all 0.4s;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 2rem 3%;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    border-radius: 70rem;
+    box-shadow: gray;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 30px;
+}
+
+.header .navbar a {
+    color: var(--black-color);
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    border-bottom: 0.1rem solid var(--black-color);
+}
+
+.header .navbar a:hover {
+    border-color: var(--black-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    background-color: transparent;
+
+}
+
+.header .cart-items-container {
+    position: absolute;
+    top: 95%;
+    height: calc(100vh - 9rem);
+    width: 29rem;
+    background-color: #fff;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+    right: -100%;
+
+}
+.header .cart-items-container.active{
+    right: 3rem;
+}
+
+.header .cart-items-container .cart-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+.header .cart-items-container .cart-item:hover{
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+}
+
+.header .cart-items-container .cart-item img{
+    height: 7rem;
+}
+
+.header .cart-items-container .cart-item .fa-times {
+position: absolute;
+top: 1rem;
+right: 1.5rem;
+font-size: 2rem;
+cursor: pointer;
+color:black;
+}
+
+.header .cart-items-container .btn{
+    width: 100%;
+    text-align: center;
+    border-radius: unset;
+}
+
+
+
+
+.header #menu-btn {
+    display: none;
+}
+
+/*!header end*/
+
+
+/*! home start */
+
+
+.home {
+    min-height: 100vh;
+    background: url(images/gucci-ayakkabi.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: -14.5rem;
+    display: flex;
+    align-items: center;
+
+}
+
+.home .content {
+    max-width: 60rem;
+    color: rgb(0, 0, 0);
+}
+
+.home .content h3 {
+    font-size: 60px;
+    color: rgb(3, 3, 3);
+
+
+}
+
+.home .content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+    color: #ceb6b6;
+}
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.menu .box-container .box {
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 340px;
+
+}
+
+.menu .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.menu .box-container .box .menu-category {
+    font-size: 1.2rem;
+    height: 10px;
+
+}
+
+.menu .box-container .box h3 {
+    font-size: 1rem;
+
+}
+
+.menu .box-container .box .price {
+    font-size: 2rem;
+    padding: 0.5rem;
+
+}
+
+/*! menu end */
+/*!review star */
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+
+}
+
+.review .box-container .box {
+    border: var(--black-color);
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 3rem;
+    margin: 80px;
+    margin-left: 80px;
+
+
+}
+
+.review .box-container .box img {
+    width: 90px;
+    height: 100px;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border: 50%;
+
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.review .box-container .box i {
+    font-size: 1.5rem;
+    color: gold;
+}
+
+/*!review end */
+.yazi {
+    animation: blinker 0.9s linear infinite; //efekti veren kod
+    color: #1c87c9; //yazı rengi
+    font-size: 30px; // yazı boyutu
+    font-weight: bold; // yazı kalınlığı
+    font-family: sans-serif; // yazı fontu
+}
+
+/*! footer start */
+.footer {
+    background-color: var(--black-color);
+    text-align: center;
+}
+
+.footer .search {
+    display: flex;
+    justify-content: center;
+}
+
+.footer .search .search-input {
+    width: 30rem;
+}
+
+.footer .search .btn {
+    background-color: var(--main-color);
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+}
+
+.footer .share {
+    padding: 2rem 0;
+
+}
+
+.footer .share a {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: white;
+    font-size: 20px;
+    border: var(--border);
+    border-radius: 50%;
+    margin: 0.3rem;
+}
+
+
+.footer .share a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.footer .links a {
+    background-color: var(--main-color);
+    padding: 0.7rem 2rem;
+    color: white;
+    font-size: 2rem;
+    border: var(--border);
+}
+
+.footer .links a:hover {
+    background-color: #0e0e0e;
+    opacity: 0.7;
+}
+
+.footer .links a.active {
+    background-color: var(--black-color);
+}
+
+.footer .credit {
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    padding: 1.5rem;
+}
+
+.footer .credit span {
+    color: red;
+}
+
+/*! footer end*/
+
+
+/*! responsive start*/
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+
+
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    .header .logo img {
+        height: 7rem;
+
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    .products .box-container .box .box-head .name {
+        font-size: 3.4rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 95%;
+        height: calc(100vh - 9rem);
+        background-color: white;
+        width: 30rem;
+        box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+        right: -100%;
+    }
+
+    .header .navbar {
+        color: var(--main-color);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+}
+
+/*! responsive end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
